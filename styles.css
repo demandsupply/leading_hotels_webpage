@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.s4-box {
+    position: relative;
+}
+
+.s4-box a {
+    position: absolute;
+    left: 30px;
+}
+
+.s4-box p {
+    position: absolute;
+    width: 50%;
+    top: 30px;
+}
