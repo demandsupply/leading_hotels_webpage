@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <script src="javascript.js" defer ></script>
     </head>
     <body>
         <div class="cover">
@@ -235,9 +236,106 @@
                         </div>
                         <div class="nav-two">
                             <!-- FIND A WAY TO CREATE IT -->
+                            <div class="nav-two-box">
+                                <label for="hotel">Hotel, città o Paese</label>
+                                <input name="hotel" type="text">
+                            </div>
+                            <div class="nav-two-box">
+                                <label for="checkin">Check-in</label>
+                                <input name="checkin" type="text">
+                            </div>
+                            <div class="nav-two-box">
+                                <label for="checkout">Check-out</label>
+                                <input name="checkout" type="text">
+                            </div>
+                            <div class="nav-two-box">
+                                <label for="rooms">Camere</label>
+                                <select name="rooms" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                            <div class="nav-two-box">
+                                <label for="adults">Adulti</label>
+                                <select name="adults" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+                                    <option value="">7</option>
+                                    <option value="">8</option>
+                                    <option value="">9</option>
+                                </select>
+                            </div>
+                            <div class="nav-two-box">
+                                <label for="children">Bambini</label>
+                                <select name="children" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                            </div>
+                            <button class="cerca">CERCA</button>
                         </div>
                     </nav>
                 </nav>
+                <div class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev"><i class="fa fa-angle-left"></i></button>
+                    <button class="carousel-button next" data-carousel-button="next"><i class="fa fa-angle-right"></i></button>
+                    <ul data-slides>
+                        <li class="slide" data-active>
+                            <img src="./images/slide1.jpg" alt="">
+                            <div class="slidebox1">
+                                <h1>I MIGLIORI SOGGIORNI AL SOLE</h1>
+                                <p>Scoprite la nostra collezione di hotel nelle località in cui c'è il sole tutto l'anno.</p>
+                                <a href="https://it.lhw.com/collections/warm-weather-year-round?ext2=1222_hp_europe_warmweather" class="slidelink1">
+                                    <strong>SCOPRI GLI HOTEL</strong>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="slidebox2">
+                                <a href="https://it.lhw.com/property.aspx?pid=C31E766F-A7AB-4B24-9BF2-18545D0A7F1C&ext2=1222_hp_europe_warmweather"><strong>SEASIDE GRAND HOTEL RESIDENCIA</strong>
+                                <p>Maspalomas, Spagna</p></a>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <img src="./images/slide2.png" alt="">
+                            <div class="slidebox1">
+                                <h1>LE MIGLIORI DESTINAZIONI PER L'APRÈS-SKI DI QUEST'INVERNO</h1>
+                                <p>
+                                    Una guida internazionale per le esperienze più esclusive della stagione invernale in hotel e sulle piste
+                                </p>
+                                <a href="https://it.lhw.com/trending/apres-ski?ext2=1122apresski" class="slidelink1">
+                                    <strong>SCOPRI DI PIÙ</strong>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="slidebox2">
+                                
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <img src="./images/slide3.png" alt="">
+                            <div class="slidebox1">
+                                <h1>NUOVI LEADING HOTELS</h1>
+                                <p>
+                                    La brillante fusione di Art Nouveau e stile contemporaneo e i servizi su misura dell'hotel offrono un comfort ineguagliabile</p>
+                                <a href="https://it.lhw.com/property.aspx?pid=DD4B2E94-E7AD-43E0-9005-28C703EA51DF&ext2=nhhp12221649" class="slidelink1">
+                                    <strong>VISUALIZZA DETTAGLI</strong>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="slidebox2">
+                                <a href="https://it.lhw.com/hotel/royal-savoy-hotel-spa-lausanne-switzerland"><strong>ROYAL SAVOY HOTEL & SPA</strong>
+                                <p>Losanna, Svizzera</p></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="section-two">
