@@ -2,6 +2,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+body {
+    background-color: rgb(171, 165, 158);
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+h1 {
+    font-family: "Amiri";
+}
+
+.section-one p,
+.section-one a,
+.section-one h1,
+label {
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.section-one {
+    position: relative;
+}
+
+nav {
+    width: 1200px;
+    height: 200px;
+    border: 1px solid #fff;
+    margin: auto;
+}
+
+.nav-one {
+    display: flex;
+    align-items: center;
+}
+
+.nav-one > img {
+    margin: 20px 60px;
+    width: 220px;
+}
+
+.nav-one-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-one-menu-a {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-one-menu-a i {
+    
+}
+
+.nav-one-menu-b {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    border: 1px solid #fff;
+}
+
+.dropdown-content {
+    position: absolute;
+    border: 1px solid #fff;
+    display: none;
+}
+
+.nav-two {
+    border: 1px solid #fff;
+    display: flex;
+}
+
+.nav-two-box {
+    display: flex;
+    flex-direction: column;
 }
 
 .carousel {
@@ -67,6 +149,12 @@
 
 .carousel-button.next {
     right: 1rem;
+}
+
+.slidebox1 {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
 }
 
 .s4-box {
