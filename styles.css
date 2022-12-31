@@ -32,37 +32,67 @@ li {
 
 nav {
     width: 1200px;
-    height: 200px;
+    height: 230px;
     border: 1px solid #fff;
     margin: auto;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 .nav-one {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: rgba(102, 102, 102, .3);
 }
 
 .nav-one > img {
     margin: 20px 60px;
-    width: 220px;
+    width: 250px;
 }
 
 .nav-one-menu {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .nav-one-menu-a {
+    margin-top: -15px;
+    height: 50px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     gap: 24px;
 }
 
+.nav-one-menu-a > a {
+    font-size: 12px;
+    font-weight: 700;
+}
+
 .nav-one-menu-a i {
-    
+    padding-right: 10px;
+}
+
+.fa-angle-down {
+    padding-left: 10px;
+}
+
+.iscriviti {
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 8px;
+    color: #fff;
 }
 
 .nav-one-menu-b {
+    height: 50px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .dropdown {
@@ -77,19 +107,48 @@ nav {
 }
 
 .nav-two {
-    border: 1px solid #fff;
+    height: 80px;
+    border-top: 4px solid #fff;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(102, 102, 102, .7);
+}
+
+.dropdown > a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .nav-two-box {
+    width: 150px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+.nav-two-box:first-of-type {
+    width: 200px;
+}
+
+.nav-two-box > input {
+    background-color: ;
+}
+
+.cerca {
+    color: #4c82ab;
+    font-size: 16px;
+    padding: 15px 48px;
+    border: 1px solid #fff;
+    border-radius: 8px;
 }
 
 .carousel {
     width: 100vw;
     height: 100vh;
     position: relative;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
 }
 
 .carousel > ul {
@@ -152,9 +211,51 @@ nav {
 }
 
 .slidebox1 {
+    width: 600px;
     position: absolute;
-    top: 50%;
+    padding: 16px;
+    top: 42%;
+    left: 20%;
     z-index: 3;
+}
+
+.slidebox1 h1 {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.slidebox1 p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.slidebox1 a {
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.slidebox1 i {
+    margin-left: 8px;
+}
+
+.slidebox2  {
+    width: 400px;
+    position: absolute;
+    top: 78%;
+    right: 20%;
+    z-index: 3;
+}
+
+.slidebox2 a {
+    text-decoration: none;
+}
+
+.slidebox2 p {
+    text-align: right;
+}
+
+.slidebox2 p:first-of-type {
+    font-size: 18px;
 }
 
 .s4-box {
