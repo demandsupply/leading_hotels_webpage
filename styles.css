@@ -60,8 +60,8 @@ nav {
 }
 
 .nav-one-menu-a {
-    margin-top: -15px;
-    height: 50px;
+    margin-top: -10px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -75,7 +75,7 @@ nav {
     font-size: 12px;
     font-weight: 700;
     text-decoration: none;
-    border-bottom: 4px solid #4c82ab;
+    /* border-bottom: 4px solid #4c82ab; */
 }
 
 .nav-one-menu-a > a:hover {
@@ -103,6 +103,7 @@ nav {
     border-radius: 25px;
     padding: 8px;
     color: #fff;
+    background-color: transparent;
 }
 
 .nav-one-menu-b {
@@ -114,7 +115,7 @@ nav {
 
 .dropdown {
     position: relative;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 
 .dropdown-content {
@@ -128,6 +129,15 @@ nav {
 .dropdown-content a {
     color: #4c82ab;
     text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+    color: #294860;
+}
+
+.dropdown-content a:hover p {
+    color: #294860;
 }
 
 .dropdown-content p {
@@ -205,11 +215,15 @@ nav {
 .cerca {
     margin: 32px 0;
     color: #fff;
-    background-color: #4c82ab;;
+    background-color: #4c82ab;
     font-size: 16px;
     padding: 15px 48px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     border-radius: 8px;
+}
+
+.cerca {
+    background-color: #fff;
 }
 
 .dtwolink:hover,
@@ -220,12 +234,13 @@ nav {
 .login:hover,
 .cerca:hover {
     background-color: #294860;
+    color: #fff;
 }
 
 .dropdown-content.dthree {
     width: 420px;
     height: 240px;
-    display: block;
+    /* display: block; */
     top: 110%;
     right: 0%;
 }
@@ -255,36 +270,191 @@ nav {
 }
 
 .dropdown-content.dfour {
-    width: 180px;
-    /* display: block; */
-    top: 25%;
-    left: 54.1%;
+    width: 1100px;
+    height: 350px;
+    display: block;
+    top: 251%;
+    left: -780%;
+    background-color: aquamarine;
+}
+
+.dfour-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.dfour-wrap img {
+    margin-top: 16px;
+    width: 300px;
+}
+
+.dfour-box p {
+    margin: 10px auto;
+    text-align: center;
+    color: #4c82ab;
 }
 
 .dropdown-content.dfive {
-    width: 180px;
-    /* display: block; */
-    top: 25%;
-    left: 54.1%;
+    width: 1100px;
+    height: 430px;
+    display: block;
+    top: 251%;
+    left: -364%;
+}
+
+.dfive-wrap {
+    display: flex;
+    position: relative;
+}
+
+.dfive-column {
+    border: 1px solid #294860;
+    width: 350px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 36px 24px 24px;
+}
+
+.dfive-box a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dfive-show {
+    border: 1px solid #294860;
+    width: 750px;
+}
+
+.dfive-show.tendenze,
+.dfive-show.passioni,
+.dfive-show.guide,
+.dfive-show.storie {
+    position: absolute;
+    top: 10%;
+    left: 31.9%;
+    border: 1px solid #294860;
+}
+
+.imagefive {
+    width: 700px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
 }
 
 .dropdown-content.dsix {
-    width: 180px;
+    width: 1100px;
+    height: 410px;
     /* display: block; */
-    top: 25%;
-    left: 54.1%;
+    top: 251%;
+    left: -1080%;
+}
+
+.dsix-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.dsix-box-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 36px;
+}
+
+.dsix-box-container img {
+    margin-top: 30px;
+    width: 320px;
+}
+
+.dsix-box a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsix-box a p {
+    margin: 16px 0;
+    width: 250px;
+    text-align: center;
+    color: #4c82ab;
+}
+
+.offerte a {
+    font-size: 20px;
+}
+
+.offerte i {
+    margin-left: 8px;
+    color: #4c82ab;
 }
 
 .dropdown-content.dseven {
-    width: 180px;
+    width: 1200px;
+    height: 460px;
     /* display: block; */
-    top: 25%;
-    left: 54.1%;
+    top: 251%;
+    left: -792%;
+}
+
+.dseven-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dseven-box-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 45px;
+    /* border: 1px solid #294860; */
+}
+
+.dseven-box {
+    margin: 30px 0;
+    /* border: 1px solid #294860; */
+    flex: 1;
+}
+
+.dseven-box a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dseven-box a p {
+    margin: 16px auto;
+    color: #4c82ab;
+    font-weight: 500;
+}
+
+.dseven-box a img {
+    width: 350px;
+}
+
+.dseven-box p {
+    display: block;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    font-weight: 300;
+}
+
+.accountl {
+    margin: 12px 0;
+    font-weight: 100;
 }
 
 .nav-two {
     height: 80px;
-    border-top: 4px solid #fff;
+    border-top: 4px solid #eee;
     display: flex;
     justify-content: space-around;
     align-items: center;
