@@ -33,7 +33,7 @@ li {
 nav {
     width: 1200px;
     height: 230px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     margin: auto;
     position: absolute;
     z-index: 2;
@@ -48,7 +48,7 @@ nav {
     background-color: rgba(102, 102, 102, .3);
 }
 
-.nav-one a > img {
+.nav-one > a > img {
     margin: 10px 60px;
     width: 250px;
 }
@@ -96,8 +96,15 @@ nav {
     border-bottom: 4px solid #4c82ab;
 }
 
-.nav-one-menu-a .align {
+.align {
     padding-left: 8px;
+}
+
+.round {
+    margin-top: -6px;
+    padding: 6px 24px;
+    border: 1px solid #fff;
+    border-radius: 25px;
 }
 
 .nav-one-menu-a button {
@@ -122,6 +129,8 @@ nav {
 }
 
 .nav-one-menu-b {
+    margin-right: 24px;
+    margin-bottom: -20px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -134,10 +143,36 @@ nav {
     /* border: 1px solid #fff; */
 }
 
+.dropdown.dfour,
+.dropdown.dfive,
+.dropdown.dsix,
+.dropdown.dseven {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #000; */
+}
+
+.dropdown.dfour:hover,
+.dropdown.dfive:hover,
+.dropdown.dsix:hover,
+.dropdown.dseven:hover {
+    background-color: #fff;
+}
+
+.dropdown.dfour:hover > a,
+.dropdown.dfive:hover > a,
+.dropdown.dsix:hover > a,
+.dropdown.dseven:hover > a {
+    color: #303030;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     background-color: #fff;
 }
 
@@ -315,8 +350,8 @@ nav {
     height: 340px;
     /* display: block; */
     transform: translateX(50%);
-    top: 221%;
-    right: -40%;
+    top: 99%;
+    right: 20%;
     background-color: #fff;
     z-index: 5;
 }
@@ -352,9 +387,9 @@ nav {
 .dropdown-content.dfive {
     width: 1100px;
     height: 400px;
-    display: block;
-    top: 221%;
-    left: -370%;
+    /* display: block; */
+    top: 99%;
+    left: -326%;
     z-index: 5;
 }
 
@@ -364,18 +399,38 @@ nav {
 }
 
 .dfive-column {
-    border: 1px solid #294860;
+    /* border: 1px solid #294860; */
     width: 350px;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px 36px 24px 24px;
+    padding: 0 36px 24px 24px;
 }
 
 .dfive-column p,
 .dfive-show p {
     color: #4c82ab;
+}
+
+.dfive-column > li {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 100%;
+    padding-right: 32px;
+    /* border: 1px solid #303030; */
+}
+
+.dfive-box > a > p {
+    width: 290px;
+    /* border: 1px solid #000; */
+}
+
+.dfive-box > a {
+    display: flex;
+    justify-content: space;
+    align-items: center;
 }
 
 .dfive-column a:hover,
@@ -389,7 +444,8 @@ nav {
 }
 
 .dfive-show {
-    border: 1px solid #294860;
+    display: none;
+    /* border: 1px solid #294860; */
     width: 750px;
     height: 400px;
 }
@@ -404,11 +460,21 @@ nav {
 
 .dfive-show img {
     /* display: none; */
+    /* border: 1px solid #303030; */
+}
+
+.imagefive {
+    width: 700px;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 12px auto;
 }
 
 .dfive-show.tendenze {
+    display: block;
     background-color: #fff;
-    z-index: 6;
+    z-index: 8;
 }
 
 .dfive-show.tendenze,
@@ -418,7 +484,8 @@ nav {
     position: absolute;
     top: 0%;
     left: 31.9%;
-    border: 1px solid #294860;
+    background-color: #fff;
+    /* border: 1px solid #294860; */
 }
 
 .dfive-show.passioni {
@@ -426,11 +493,12 @@ nav {
     z-index: 7;
 }
 .dfive-show.guide {
-    display: block;
+    /* display: block; */
     z-index: 7;
+    /* border: 1px solid #303030; */
 }
 .dfive-show.storie {
-    display: block;
+    /* display: block; */
     z-index: 7;
 }
 
@@ -444,17 +512,23 @@ nav {
     z-index: 2;
 }
 
-.passionihover:hover .dfive-show.passioni {
+.dfive-box.pas:hover .dfive-show.passioni { 
     display: block;
-    z-index: 4;
+    z-index: 9;
+}
+
+.dfive-box.gui:hover .dfive-show.guide { 
+    display: block;
+    z-index: 9;
+}
+
+.dfive-box.sto:hover .dfive-show.storie { 
+    display: block;
+    z-index: 9;
 }
 
 .passioni-column > a {
-    padding-bottom: 16px;
-}
-
-.passioni-column a:hover {
-    text-decoration: underline;
+    margin-top: 32px;
 }
 
 .passioni-column img {
@@ -462,16 +536,9 @@ nav {
     margin: 40px;
 }
 
-.imagefive {
-    width: 700px;
-    height: 320px;
-    object-fit: cover;
-    display: block;
-    margin: 12px auto;
-}
-
-.dfive-show.passioni {
+.passioni-wrap {
     display: flex;
+
 }
 
 .passioni-column {
@@ -504,8 +571,8 @@ nav {
     width: 1100px;
     height: 415px;
     /* display: block; */
-    top: 221%;
-    left: -1090%;
+    top: 99%;
+    left: -428%;
     z-index: 5;
 }
 
@@ -560,10 +627,10 @@ nav {
 
 .dropdown-content.dseven {
     width: 1200px;
-    height: 460px;
+    height: 440px;
     /* display: block; */
-    top: 221%;
-    left: -795%;
+    top: 99%;
+    left: -555.5%;
     z-index: 5;
 }
 
@@ -657,7 +724,7 @@ nav {
     color: #4c82ab;
     font-size: 16px;
     padding: 15px 48px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     border-radius: 8px;
 }
 
