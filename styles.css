@@ -873,7 +873,8 @@ nav {
     text-align: center;
 }
 
-.section-two h1 {
+.section-two h1,
+.section-three h1 {
     margin-top: 80px;
     font-size: 48px;
 }
@@ -972,7 +973,7 @@ nav {
     width: 100%;
     height: 330px;
     background-color: rgb(255, 255, 255);
-    z-index: 2;
+    z-index: 1;
 }
 /* 
 .s2-box:hover {
@@ -995,10 +996,106 @@ nav {
 }
 
 .section-three {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 1500px;
-    margin: 100px auto;
+    margin: auto;
+    text-align: center;
     border: 1px solid #fff;
     z-index: 2;
+}
+
+.s3-boxescontainer {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+}
+
+.s3-box {
+    position: relative;
+    width: 375px;
+    height: 450px;
+    text-decoration: none;
+}
+
+.imaget1 {
+    background-image: url(./images/destination1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imaget2 {
+    background-image: url(./images/destination2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.imaget3 {
+    background-image: url(./images/destination3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.imaget4 {
+    background-image: url(./images/destination4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.section-three h3 {
+    font-weight: 200;
+    color: #666666;
+    width: 800px;
+}
+
+.showt1,
+.showt2,
+.showt3,
+.showt4 {
+    display: none;
+}
+
+.s3-box-container {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: left;
+    padding: 32px 0 0 24px;
+}
+
+.line {
+    position: absolute;
+    width: 375px;
+    height: 6px;
+    background-color: #4c82ab;
+}
+
+.s3-box-container p {
+    font-size: 18px;
+    width: 300px;
+}
+
+.s3-box-container i {
+    margin-left: 8px;
+}
+
+.imaget1:hover .showt1 {
+    display: block;
+}
+
+.imaget2:hover .showt2 {
+    display: block;
+}
+
+.imaget3:hover .showt3 {
+    display: block;
+}
+
+.imaget4:hover .showt4 {
+    display: block;
 }
 
 .footer-container {
